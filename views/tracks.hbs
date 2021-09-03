@@ -1,0 +1,17 @@
+<div class="track-head">
+    <h2>Title</h2>
+    <h2>Listen</h2>
+</div>
+<ul>
+     {{#each albumTracks}}
+        <div class="track-bar">
+            <h5>{{name}}</h5>
+            <audio
+                controls
+                src="{{preview_url}}">
+                Your browser does not support the
+                <code>audio</code> element.
+            </audio>
+        </div>
+    {{/each}}
+</ul>
